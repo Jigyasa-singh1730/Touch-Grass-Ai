@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TouchGrass AI</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">🌿 TouchGrass <span>AI</span></div>
+    <nav>
+      <a href="#planner">AI Planner</a>
+      <a href="#challenges">Challenges</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="tag">YOUR NATURE RESET</p>
+        <h1>Less screen.<br>More green.</h1>
+        <p>Let AI turn your free time into a real-world adventure.</p>
+        <button id="startBtn">Plan My Adventure ↗</button>
+      </div>
+      <div class="nature">🌳 🌿 🦋</div>
+    </section>
+
+    <section id="planner">
+      <h2>🌱 AI Adventure Planner</h2>
+      <div class="panel">
+        <label for="time">Available time</label>
+        <select id="time">
+          <option value="10">10 minutes</option>
+          <option value="20" selected>20 minutes</option>
+          <option value="30">30 minutes</option>
+          <option value="60">1 hour</option>
+        </select>
+
+        <label for="activity">Choose your activity</label>
+        <select id="activity">
+          <option value="nature observation">Nature observation</option>
+          <option value="walking">Walking</option>
+          <option value="gardening">Gardening</option>
+          <option value="bird watching">Bird watching</option>
+          <option value="nature photography">Nature photography</option>
+        </select>
+
+        <label for="mood">How are you feeling?</label>
+        <input id="mood" placeholder="e.g. bored, curious, tired">
+
+        <button id="generateBtn">✨ Generate Adventure</button>
+        <p id="aiStatus">Open-source AI will run in your browser.</p>
+        <div id="aiResult" aria-live="polite">
+          Your adventure will appear here.
+        </div>
+      </div>
+    </section>
+
+    <section id="challenges">
+      <h2>Today's Outdoor Challenges</h2>
+      <div id="challengeList"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Your Nature Progress</h2>
+      <div class="stats">
+        <div>Minutes outside<strong id="minutes">0</strong></div>
+        <div>Challenges<strong id="count">0</strong></div>
+        <div>Points<strong id="points">0</strong></div>
+      </div>
+      <div class="track"><div id="progressBar"></div></div>
+      <p id="progressText">0 of 5 challenges completed</p>
+    </section>
+  </main>
+
+  <footer>🌿 Explore more. Scroll less.</footer>
+</body>
+</html>
